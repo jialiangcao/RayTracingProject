@@ -1,0 +1,10 @@
+^C:\USERS\JCAO2\CODE\RAYTRACINGPROJECT\SRC\DEBUG\CMAKEFILES\B62F33EAA94CFDF93D500E4A3D1BAC34\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/jcao2/Code/RayTracingProject/src -BC:/Users/jcao2/Code/RayTracingProject/src/Debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/jcao2/Code/RayTracingProject/src/Debug/RayTracing.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
